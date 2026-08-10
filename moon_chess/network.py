@@ -29,7 +29,7 @@ import websockets
 logger = logging.getLogger(__name__)
 
 # ── 中继服务器地址 ──
-DEFAULT_RELAY_URL = "ws://127.0.0.1:0721"
+DEFAULT_RELAY_URL = "wss://moon-chess-relay.onrender.com"
 
 # ── 网络参数 ──
 CONNECT_TIMEOUT = 15.0       # 连接超时（秒）

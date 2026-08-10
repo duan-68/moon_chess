@@ -6,15 +6,15 @@
     或运行 build_exe.bat
 """
 
+import os
 import sys
-from pathlib import Path
 
-# 项目根目录
-_ROOT = Path(__file__).resolve().parent
+# 项目根目录 — 使用当前工作目录
+_ROOT = os.getcwd()
 
 a = Analysis(
-    [str(_ROOT / "moon_chess" / "__main__.py")],
-    pathex=[str(_ROOT)],
+    [os.path.join(_ROOT, "moon_chess", "__main__.py")],
+    pathex=[_ROOT],
     binaries=[],
     datas=[],
     hiddenimports=[
