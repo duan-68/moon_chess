@@ -6,3 +6,4 @@ services:
     buildCommand: pip install -r moon_chess/requirements-relay.txt
     startCommand: python moon_chess/src/relay_server.py
     plan: free
+# ignore
