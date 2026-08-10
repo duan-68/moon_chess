@@ -1,11 +1,8 @@
-# Render.com 一键部署配置
-# 推送仓库到 GitHub 后，在 Render Dashboard → Blueprints → 连接仓库即可
-
 services:
   - type: web
     name: moon-chess-relay
     env: python
-    region: singapore          # 新加坡（离国内近，延迟低）
-    buildCommand: pip install -r requirements-relay.txt
-    startCommand: python moon_chess/relay_server.py
+    region: singapore
+    buildCommand: pip install -r moon_chess/requirements-relay.txt
+    startCommand: python moon_chess/src/relay_server.py
     plan: free

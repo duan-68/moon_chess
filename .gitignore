@@ -16,5 +16,3 @@ build/
 # Build output
 *.spec.bak
 
-# Unrelated
-prank/

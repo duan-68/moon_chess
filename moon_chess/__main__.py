@@ -1,4 +1,4 @@
-"""包入口：支持 python -m moon_chess"""
-from moon_chess.main import main
+"""包入口：python -m moon_chess"""
+from moon_chess.src.main import main
 
 main()
